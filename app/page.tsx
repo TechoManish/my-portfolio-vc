@@ -23,7 +23,7 @@ export default function Home() {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          src="https://www.youtube.com/channel/UC9zUE1t8w4QIIzDgcnJQAnw"
           title="YouTube video"
           allowFullScreen
         />
