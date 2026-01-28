@@ -1,26 +1,66 @@
 export default function Home() {
   return (
-    <main style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>Your Name</h1>
-      <p>Welcome to my portfolio website.</p>
+    <main style={styles.container}>
+      <section style={styles.section}>
+        <h1 style={styles.title}>Techo Manish</h1>
+        <p style={styles.subtitle}>
+          Developer | Learner | Building projects with Next.js
+        </p>
+      </section>
 
-      <h2>My Work</h2>
-      <ul>
-        <li>Project 1 – Short description</li>
-        <li>Project 2 – Short description</li>
-      </ul>
+      <section style={styles.section}>
+        <h2 style={styles.heading}>Projects</h2>
+        <ul style={styles.list}>
+          <li>Portfolio Website (Next.js + Vercel)</li>
+          <li>YouTube Content Projects</li>
+          <li>More coming soon...</li>
+        </ul>
+      </section>
 
-      <h2>Videos</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-        title="YouTube video"
-        allowFullScreen
-      />
+      <section style={styles.section}>
+        <h2 style={styles.heading}>Videos</h2>
+        <p>Some of my YouTube work:</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          title="YouTube video"
+          allowFullScreen
+        />
+      </section>
 
-      <h2>Contact</h2>
-      <p>Email: your@email.com</p>
+      <section style={styles.section}>
+        <h2 style={styles.heading}>Contact</h2>
+        <p>Email: your@email.com</p>
+      </section>
     </main>
   );
 }
+
+const styles = {
+  container: {
+    maxWidth: "900px",
+    margin: "0 auto",
+    padding: "40px 20px",
+    fontFamily: "Arial, sans-serif",
+    lineHeight: 1.6,
+  },
+  section: {
+    marginBottom: "60px",
+  },
+  title: {
+    fontSize: "40px",
+    marginBottom: "10px",
+  },
+  subtitle: {
+    fontSize: "18px",
+    color: "#555",
+  },
+  heading: {
+    fontSize: "26px",
+    marginBottom: "10px",
+  },
+  list: {
+    paddingLeft: "20px",
+  },
+};
