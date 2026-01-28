@@ -1,6 +1,13 @@
 export default function Home() {
   return (
     <main style={styles.container}>
+      <nav style={{ marginBottom: "40px" }}>
+      <a href="/" style={{ marginRight: "20px" }}>Home</a>
+      <a href="/projects" style={{ marginRight: "20px" }}>Projects</a>
+      <a href="/videos" style={{ marginRight: "20px" }}>Videos</a>
+      <a href="/about">About</a>
+    </nav>
+
       <section style={styles.section}>
         <h1 style={styles.title}>Techo Manish</h1>
         <p style={styles.subtitle}>
