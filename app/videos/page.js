@@ -1,6 +1,4 @@
 
-<a href="/" style={backStyle}>← Back to Home</a>
-
 const videos = [
   {
     title: "My First YouTube Video",
@@ -21,6 +19,9 @@ const videos = [
 
 export default function Videos() {
   return (
+    <button onClick={() => window.history.back()}>
+  ← Go Back
+</button>
     <main style={styles.container}>
       <h1 style={styles.title}>Videos</h1>
       <div style={styles.grid}>
