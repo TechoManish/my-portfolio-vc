@@ -12,7 +12,7 @@ export default function Home() {
         <h2 style={styles.heading}>Projects</h2>
         <ul style={styles.list}>
           <li>Portfolio Website (Next.js + Vercel)</li>
-          <li>YouTube Content Projects https://www.youtube.com/channel/UC9zUE1t8w4QIIzDgcnJQAnw</li>
+          <li>YouTube Content Projects <li></li> https://www.youtube.com/channel/UC9zUE1t8w4QIIzDgcnJQAnw</li></li>
           <li>More coming soon...</li>
         </ul>
       </section>
@@ -23,7 +23,7 @@ export default function Home() {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/channel/UC9zUE1t8w4QIIzDgcnJQAnw"
+          src="https://www.youtube.com/watch?v=OBvf-O664As"
           title="YouTube video"
           allowFullScreen
         />
@@ -31,7 +31,7 @@ export default function Home() {
 
       <section style={styles.section}>
         <h2 style={styles.heading}>Contact</h2>
-        <p>Email: your@email.com</p>
+        <p>Email: 1TechnoManish@gmail.com</p>
       </section>
     </main>
   );
