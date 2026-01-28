@@ -1,4 +1,3 @@
-
 const videos = [
   {
     title: "My First YouTube Video",
@@ -19,11 +18,13 @@ const videos = [
 
 export default function Videos() {
   return (
-    <button onClick={() => window.history.back()}>
-  ← Go Back
-</button>
     <main style={styles.container}>
+
+      {/* 🔙 Back to Home button */}
+      <a href="/" style={backStyle}>← Back to Home</a>
+
       <h1 style={styles.title}>Videos</h1>
+
       <div style={styles.grid}>
         {videos.map((video) => (
           <div key={video.id} style={styles.card}>
@@ -38,9 +39,18 @@ export default function Videos() {
           </div>
         ))}
       </div>
+
     </main>
   );
 }
+
+const backStyle = {
+  display: "inline-block",
+  marginBottom: "30px",
+  textDecoration: "none",
+  color: "#0070f3",
+  fontSize: "16px",
+};
 
 const styles = {
   container: {
@@ -60,18 +70,4 @@ const styles = {
   card: {
     border: "1px solid #ddd",
     padding: "15px",
-    borderRadius: "8px",
-  },
-  iframe: {
-    width: "100%",
-    height: "200px",
-    marginBottom: "10px",
-  },
-};
-const backStyle = {
-  display: "inline-block",
-  marginBottom: "30px",
-  textDecoration: "none",
-  color: "#0070f3",
-  fontSize: "16px",
-};
+    borderRadius: "8px"
