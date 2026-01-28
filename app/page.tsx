@@ -12,7 +12,7 @@ export default function Home() {
         <h2 style={styles.heading}>Projects</h2>
         <ul style={styles.list}>
           <li>Portfolio Website (Next.js + Vercel)</li>
-          <li>YouTube Content Projects <li></li> https://www.youtube.com/channel/UC9zUE1t8w4QIIzDgcnJQAnw</li></li>
+          <li>YouTube Content Projects <li> https://www.youtube.com/channel/UC9zUE1t8w4QIIzDgcnJQAnw</li>
           <li>More coming soon...</li>
         </ul>
       </section>
