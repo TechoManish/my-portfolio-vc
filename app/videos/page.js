@@ -1,3 +1,6 @@
+
+<a href="/" style={backStyle}>← Back to Home</a>
+
 const videos = [
   {
     title: "My First YouTube Video",
